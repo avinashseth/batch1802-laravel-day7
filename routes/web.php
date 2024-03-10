@@ -21,6 +21,12 @@ Route::get('js-framework', [BladeExamplesController::class, 'jsFramework']);
 
 Route::get('convert-to-json', [BladeExamplesController::class, 'convertToJson']);
 
+Route::get('if-statement', [BladeExamplesController::class, 'ifStatement']);
+
+Route::get('unless', [BladeExamplesController::class, 'unlessStatement']);
+
+Route::get('app-stage', [BladeExamplesController::class, 'appStage']);
+
 
 
 

@@ -30,4 +30,26 @@ class BladeExamplesController extends Controller
         return view('convert-to-json');
 
     }
+
+    function ifStatement()
+    {
+        $age = rand(17,18);
+        return view('if-statement')
+            ->with('age', $age);
+    }
+
+    function unlessStatement()
+    {
+
+        $number = rand(1, 10);
+
+        return view('unless')
+            ->with('number', $number);
+
+    }
+
+    function appStage()
+    {
+        return view('app-stage');
+    }
 }
