@@ -1,0 +1,1 @@
+Hello {{ $name }}, welcome to our application! Your order number is #{{ $order }}. Thank you for registering with us.
