@@ -27,6 +27,18 @@ Route::get('unless', [BladeExamplesController::class, 'unlessStatement']);
 
 Route::get('app-stage', [BladeExamplesController::class, 'appStage']);
 
+Route::view('loops', 'loops');
+
+use App\Models\User;
+
+Route::get('users', function() {
+
+    $users = User::all();
+
+    return view('users')
+        ->with('users', $users);
+
+});
 
 
 
@@ -95,7 +107,6 @@ Route::get('delete-session', [MySessionController::class, 'getDeleteSession']);
 
 
 use App\Mail\NewRegistrationMail;
-use App\Models\User;
 
 Route::get('demo', function() {
 
