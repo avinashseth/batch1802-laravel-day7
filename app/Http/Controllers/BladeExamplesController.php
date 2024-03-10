@@ -23,4 +23,11 @@ class BladeExamplesController extends Controller
     {
         return view('js-framework');
     }
+
+    function convertToJson()
+    {
+
+        return view('convert-to-json');
+
+    }
 }
